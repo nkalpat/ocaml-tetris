@@ -1,1 +1,1 @@
-# cs3110-tetris
+# ocaml-tetris
