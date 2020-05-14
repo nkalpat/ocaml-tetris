@@ -1,0 +1,28 @@
+### Starting build.
+# Target: main.mli.depends, tags: { package(csv), package(graphics), package(oUnit), package(qcheck), package(str), package(unix), extension:mli, file:main.mli, ocaml, ocamldep, quiet, traverse }
+ocamlfind ocamldep -package unix -package oUnit -package qcheck -package str -package csv -package graphics -modules main.mli > main.mli.depends # cached
+# Target: main.cmi, tags: { package(csv), package(graphics), package(oUnit), package(qcheck), package(str), package(unix), byte, compile, extension:mli, file:main.mli, interf, ocaml, quiet, traverse }
+ocamlfind ocamlc -c -package unix -package oUnit -package qcheck -package str -package csv -package graphics -o main.cmi main.mli # cached
+# Target: main.ml.depends, tags: { package(csv), package(graphics), package(oUnit), package(qcheck), package(str), package(unix), extension:ml, file:main.ml, ocaml, ocamldep, quiet, traverse }
+ocamlfind ocamldep -package unix -package oUnit -package qcheck -package str -package csv -package graphics -modules main.ml > main.ml.depends # cached
+# Target: draw.mli.depends, tags: { package(csv), package(graphics), package(oUnit), package(qcheck), package(str), package(unix), extension:mli, file:draw.mli, ocaml, ocamldep, quiet, traverse }
+ocamlfind ocamldep -package unix -package oUnit -package qcheck -package str -package csv -package graphics -modules draw.mli > draw.mli.depends # cached
+# Target: draw.cmi, tags: { package(csv), package(graphics), package(oUnit), package(qcheck), package(str), package(unix), byte, compile, extension:mli, file:draw.mli, interf, ocaml, quiet, traverse }
+ocamlfind ocamlc -c -package unix -package oUnit -package qcheck -package str -package csv -package graphics -o draw.cmi draw.mli # cached
+# Target: game.mli.depends, tags: { package(csv), package(graphics), package(oUnit), package(qcheck), package(str), package(unix), extension:mli, file:game.mli, ocaml, ocamldep, quiet, traverse }
+ocamlfind ocamldep -package unix -package oUnit -package qcheck -package str -package csv -package graphics -modules game.mli > game.mli.depends # cached
+# Target: game.cmi, tags: { package(csv), package(graphics), package(oUnit), package(qcheck), package(str), package(unix), byte, compile, extension:mli, file:game.mli, interf, ocaml, quiet, traverse }
+ocamlfind ocamlc -c -package unix -package oUnit -package qcheck -package str -package csv -package graphics -o game.cmi game.mli # cached
+# Target: main.cmo, tags: { package(csv), package(graphics), package(oUnit), package(qcheck), package(str), package(unix), byte, compile, extension:cmo, extension:ml, file:main.cmo, file:main.ml, implem, ocaml, quiet, traverse }
+ocamlfind ocamlc -c -package unix -package oUnit -package qcheck -package str -package csv -package graphics -o main.cmo main.ml # cached
+# Target: draw.ml.depends, tags: { package(csv), package(graphics), package(oUnit), package(qcheck), package(str), package(unix), extension:ml, file:draw.ml, ocaml, ocamldep, quiet, traverse }
+ocamlfind ocamldep -package unix -package oUnit -package qcheck -package str -package csv -package graphics -modules draw.ml > draw.ml.depends # cached
+# Target: draw.cmo, tags: { package(csv), package(graphics), package(oUnit), package(qcheck), package(str), package(unix), byte, compile, extension:cmo, extension:ml, file:draw.cmo, file:draw.ml, implem, ocaml, quiet, traverse }
+ocamlfind ocamlc -c -package unix -package oUnit -package qcheck -package str -package csv -package graphics -o draw.cmo draw.ml # cached
+# Target: game.ml.depends, tags: { package(csv), package(graphics), package(oUnit), package(qcheck), package(str), package(unix), extension:ml, file:game.ml, ocaml, ocamldep, quiet, traverse }
+ocamlfind ocamldep -package unix -package oUnit -package qcheck -package str -package csv -package graphics -modules game.ml > game.ml.depends # cached
+# Target: game.cmo, tags: { package(csv), package(graphics), package(oUnit), package(qcheck), package(str), package(unix), byte, compile, extension:cmo, extension:ml, file:game.cmo, file:game.ml, implem, ocaml, quiet, traverse }
+ocamlfind ocamlc -c -package unix -package oUnit -package qcheck -package str -package csv -package graphics -o game.cmo game.ml # cached
+# Target: main.byte, tags: { package(csv), package(graphics), package(oUnit), package(qcheck), package(str), package(unix), byte, dont_link_with, extension:byte, file:main.byte, link, ocaml, program, quiet, traverse }
+ocamlfind ocamlc -linkpkg -package unix -package oUnit -package qcheck -package str -package csv -package graphics draw.cmo game.cmo main.cmo -o main.byte # cached
+# Compilation successful.
